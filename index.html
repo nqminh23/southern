@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Cảnh đẹp và Ẩm thực Việt Nam</title>
+    <link rel="stylesheet" href="styles.css"> <!-- liên kết css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Protest+Guerrilla&display=swap" rel="stylesheet"> <!-- liên kết font chữ tiêu đề -->
+
+</head>
+
+<body>
+    <header>
+        <div class="advanced-search-container">
+            
+            <!-- Bộ lọc theo vùng miền -->
+            <select id="region-select" class="search-select">
+                <option value="">Tất cả vùng miền</option>
+                <option value="north">Miền Bắc</option>
+                <option value="central">Miền Trung</option>
+                <option value="south">Miền Nam</option>
+            </select>
+        
+            <!-- Bộ lọc loại hình du lịch -->
+            <select id="type-select" class="search-select">
+                <option value="">Tất cả loại hình</option>
+                <option value="culture">Văn hóa</option>
+                <option value="food">Ẩm thực</option>
+                <option value="food">Phong Cảnh </option>
+
+            </select>
+        
+            <!-- Bộ lọc dịch vụ -->
+            <select id="service-select" class="search-select">
+                <option value="">Tất cả dịch vụ</option>
+                <option value="tour">Tour du lịch</option>
+                <option value="car">Đặt xe</option>
+            </select>
+        
+            <!-- Thanh tìm kiếm và nút -->
+            <input type="text" id="keyword-input" class="search-input" placeholder="Tìm kiếm địa điểm, món ăn, từ khóa...">
+            <button class="search-button" onclick="advancedSearch()">Tìm kiếm</button>
+        </div>
+        <br>
+        <h1>Phong Cảnh và Ẩm Thực Việt Nam</h1>         
+        <div class="intro">
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2l2.45 7.6h8.05l-6.5 4.8 2.45 7.6-6.5-4.8-6.5 4.8 2.45-7.6-6.5-4.8h8.05z"/>
+            </svg>
+        </div>
+            <div class="banner">
+                
+            <div class="slides">
+                <img src="https://images.baodantoc.vn/uploads/2022/Th%C3%A1ng%207/Ng%C3%A0y_18/Anh/untitled%20folder/271884371_155175710192340_125395499089496273_n.jpg" alt="Cảnh đẹp Miền Bắc" class="slide">
+                <img src="https://cafebiz.cafebizcdn.vn/2019/7/12/photo-1-156292434512413329625.jpg" alt="Ẩm thực Miền Trung" class="slide">
+                <img src="https://daotaobeptruong.vn/wp-content/uploads/2021/03/am-thuc-viet-nam.jpg" alt="Cảnh đẹp Miền Nam" class="slide">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="regions">
+            <div class="region" id="north"> <!-- Gắn thẻ "region" dẫn đến link bằng id -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnWLN3fXqxZes-8enn1HLbxZ9E4b8EkvufrA&ss" alt="Miền Bắc">
+                <a href="north.html" class="learn-more">Miền Bắc</a>
+            </div>
+            <div class="region" id="central">
+                <img src="https://static.vinwonders.com/2022/07/du-lich-mien-trung-14.jpg" alt="Miền Trung">
+                <a href="central.html" class="learn-more">Miền Trung</a>
+            </div>
+            <div class="region" id="south">
+                <img src="https://dulichao.net/wp-content/uploads/2018/12/chia-se-kinh-nghiem-du-lich-mien-nam.jpg" alt="Miền Nam">
+                <a href="south.html" class="learn-more">Miền Nam</a>
+            </div>
+        </section>
+    </main>
+    <div class="main">
+        <h1>Những cảnh đẹp và ẩm thực ở miền Nam</h1>
+        <p>
+          Du lịch miền Nam khám phá trọn vẹn vẻ đẹp về thiên nhiên, con người và
+          nét văn hóa của vùng đất nơi đây luôn là điều thu hút tín đồ yêu thích
+          xê dịch. Những kinh nghiệm du lịch chi tiết cùng trải nghiệm thực tế về
+          những địa điểm du lịch ở miền Nam giúp bạn có thêm thông tin cho chuyến
+          du lịch miền Nam trọn vẹn nhất.<br />Miền Nam nước ta có khí hậu nhiệt
+          đới ẩm, nhiệt độ luôn ổn định từ 25 - 35° C và được chia thành hai mùa
+          chính: Mùa mưa và mùa khô.Mỗi mùa của miền Nam đều mang một nét đẹp
+          riêng nên rất khó để chọn đâu là thời điểm du lịch lý tưởng nhất. Tùy
+          vào nhu cầu tham quan của bạn để lên chương trình du lịch chi tiết và
+          phù hợp. Bạn đừng quên cập nhật các thông tin về thời tiết để có chuyến
+          đi du lịch miền Nam Việt Nam trọn vẹn nhất.
+        </p>
+        <h2>1. Chợ nổi Cái Răng - Cần Thơ</h2>
+        <p>
+          Chợ nổi Cái Răng Cần Thơ sẽ mang đến những trải nghiệm có 1-0-2 cho bạn
+          như chiêm ngưỡng khung cảnh nên thơ của chợ nổi lúc bình minh, ngồi lênh
+          đênh trên thuyền hòa mình vào không khí buôn bán tấp nập sáng sớm và
+          thưởng thức tô bún riêu ngay trên ghe thuyền… vô cùng tuyệt vời.
+        </p>
+        <img
+          src="https://thamhiemmekong.com/wp-content/uploads/2019/04/chonoicairang01.jpg"
+          alt=""
+        />
+        <p>
+          Chợ nổi Cái Răng Cần Thơ: nằm trên sông Cần Thơ, số 46 đường Hai Bà
+          Trưng, quận Ninh Kiều, thành phố Cần Thơ.Chợ nổi Cái Răng Cần Thơ được
+          công nhận là di sản văn hóa phi vật thể quốc gia vào năm 2016. Chợ nổi
+          Cái Răng Cần Thơ được hình thành từ những năm đầu thế kỷ 20, chủ yếu
+          buôn bán các loại nông sản, trái cây, đặc sản của vùng đồng bằng sông
+          Cửu Long. Trong quá khứ, chợ đã từng trở thành nơi thu mua lúa gạo lớn
+          nhất tại miền Tây của người Hoa Kiều. Với những ai yêu thích khám phá,
+          muốn tìm hiểu về văn hóa miền sông nước Nam Bộ thì chợ nổi Cái Răng Cần
+          Thơ chính là điểm đến lý tưởng nhất.
+        </p>
+        <img
+          src="https://scontent.iocvnpt.com/resources/portal/Images/CTO/superadminportal.cto/DiaDiem/chonoicairang/chonoicairang6_637018249508974936.jpg"
+          alt=""
+        />
+        <p>
+          Chợ nổi Cái Răng Cần Thơ mang nét đặc trưng chung của các khu chợ nổi
+          miền Tây là nằm ngay ngã 3 sông (nhánh sông Cái Răng và sông Hậu). Vị
+          trí này có mực nước không sâu không cạn để thuyền bè dễ dàng neo đậu, di
+          chuyển. Nơi này cũng nằm gần một ngôi chợ trên bờ và một vựa trái cây
+          lớn. Trước kia, chợ Cái Răng bán chủ yếu là các mặt hàng nông sản và mỗi
+          ghe chỉ chuyên bày bán một loại mặt hàng nhất định. Tuy nhiên, hiện nay
+          chợ đã bán đa dạng hơn như ẩm thực, các món đồ gia dụng và những thứ
+          thiết yếu cho cuộc sống trên sông.
+        </p>
+        <img
+          src="https://cuongdulich.com/assets/posts/1572340058-cho-noi-cai-rang_6.jpg"
+          alt=""
+        />
+        <p>
+          Dạo quanh chợ nổi, khách du lịch sẽ thấy nhiều ghe chất đầy trái cây.
+          Hấp dẫn như: xoài, sầu riêng, dưa hấu, dứa, măng cụt… xuôi ngược trên
+          dòng sông.
+        </p>
+        <h2>2. Địa đạo củ chi - TP Hồ Chí Minh</h2>
+        <p>
+          Du lịch địa đạo Củ Chi là trải nghiệm khám phá “mê cung dưới lòng đất” –
+          một trong những di tích nổi tiếng cấp quốc gia tại Sài Gòn. Địa điểm này
+          mang đến cho bạn trải nghiệm thú vị trong hành trình du lịch tại thành
+          phố mang tên Bác.<br />Du lịch địa đạo Củ Chi hiện nay ngày càng phát
+          triển bởi đây không chỉ là điểm đến có giá trị về lịch sử, văn hóa mà
+          còn là điểm du lịch hấp dẫn gắn liền với những công trình quân sự nổi
+          tiếng tại Việt Nam. Khám phá địa đạo Củ Chi sẽ giúp bạn và gia đình có
+          được chuyến đi đầy trải nghiệm và ý nghĩa.
+        </p>
+  
+        <img
+          src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/6/23/1059788/Cats.jpg"
+          alt=""
+        />
+        <p>
+          Địa đạo Củ Chi là một trong những địa điểm du lịch Củ Chi nổi tiếng được
+          nhiều du khách biết đến khi tham quan đến địa phương này. Khu di tích
+          địa đạo Củ Chi tọa lạc tại đường tỉnh lộ 15, ấp Phú Hiệp, xã Phú Mỹ
+          Hưng, huyện Củ Chi, Thành phố Hồ Chí Minh. <br />Điểm du lịch này có
+          tổng chiều dài lên tới 250km, có 3 tầng sâu khác nhau, tầng cao nhất
+          cách mặt đất khoảng 3m, tầng giữa cách mặt đất 6m và tầng sâu nhất cách
+          tới 12m. Đây là một trong 6 công trình nhân tạo nổi tiếng trên thế giới
+          hiện nay. Bên cạnh đó, khu du lịch địa đạo Củ Chi cũng lọt vào top 7
+          điểm đến kỳ lạ nhất tại Đông Nam Á.<br />Từ lâu, địa đạo Củ Chi là một
+          trong những điểm đến thú vị nhất tại Sài Gòn, tuy nhiên, không phải ai
+          cũng có thể biết đến lịch sử hình thành của điểm du lịch này.
+        </p>
+        <img src="https://dichoithoi.com/diem-den/dia-dao-cu-chi.jpg" alt="" />
+        <p>
+          Lịch sử địa đạo Củ Chi gắn liền với cuộc kháng chiến chống Pháp, giai
+          đoạn năm 1946 – 1948. Công trình được thực hiện bởi quân và dân xã Tân
+          Phú Trung và xã Phước Vĩnh An nhằm ẩn nấp, cất giữ vũ khí, quân tư
+          trang. Ban đầu, mỗi ngôi làng tại đây đều có một hầm căn cứ riêng, tuy
+          nhiên, do nhu cầu đi lại, vì vậy họ đã kết nối với nhau để tạo nên một
+          hệ thống liên hoàn. Công trình địa đạo Củ Chi hiện nay nối liền 6 xã
+          phía Bắc của địa đạo Củ Chi. Từ công trình này, quân sự có thể dễ dàng
+          liên lạc, che giấu lực lượng, họp bàn những kế hoạch cách mạng.<br />Từ
+          năm 1961 – 1965, công trình này được phát triển ra thành nhiều nhánh
+          thông với nhau. Phía trên của công trình này còn được trang bị với rất
+          nhiều hố đinh, hầm chuông, bãi mìn… phục vụ cho cuộc chiến đấu của quân
+          và dân ta.<br />Nhắc đến khu vực sầm uất và phát triển bậc nhất Việt Nam
+          thì không thể không nhắc đến TP Hồ Chí Minh hay được mọi người quen gọi
+          là Sài Gòn. Sài Gòn không chỉ nổi tiếng với những trung tâm hoa lệ mà
+          còn có một nền ẩm thực lâu đời vô cùng đa dạng. Ẩm thực Sài Gòn là sự
+          hội tụ của đa văn hóa Đông - Tây và giữa cổ xưa - hiện đại. Cũng chính
+          nhờ vậy mà ẩm thực nơi đây ngày càng thu hút du khách trong và ngoài
+          nước ghé thăm, thưởng thức.
+        </p>
+        <img
+          src="https://static.vinwonders.com/production/com-tam-sai-gon-2.jpg"
+          alt=""
+        />
+        <h4>Cơm tấm Sài Gòn</h4>
+        <p>
+          Cơm tấm là một món ăn truyền thống của người Sài Gòn và được coi là món
+          ăn “quốc dân” của thành phố này. Cơm tấm thường được chế biến từ cơm
+          tấm, một loại cơm gạo tấm nhỏ hơn và cứng hơn cơm trắng thông thường.<br />Nguyên
+          liệu chính của cơm tấm là cơm tấm, thịt heo bì, chả trứng, thịt nướng,
+          và rau sống như giá, xà lách, dưa leo, rau thơm. Thêm vào đó, món ăn này
+          thường được phục vụ cùng với nước mắm chua ngọt, trứng chiên, chả
+          trứng.\<br />Cơm tấm có thể được tìm thấy ở các quán ăn và quán ăn đường
+          phố khắp Sài Gòn, từ những quán lớn đến những quán nhỏ. Món ăn này có
+          giá cả phải chăng và được ưa chuộng bởi hương vị thơm ngon và lượng dinh
+          dưỡng cung cấp cho cơ thể. Với hương vị đặc trưng và tính thanh mát, cơm
+          tấm đã trở thành món ăn yêu thích của người dân Sài Gòn và được coi là
+          biểu tượng ẩm thực của thành phố này.
+        </p>
+        <img
+          src="https://i-giadinh.vnecdn.net/2023/05/15/Buoc-8-Thanh-pham-1-8-8366-1684125654.jpg"
+          alt=""
+        />
+        <h4>Hủ tiếu Sài Gòn</h4>
+        <p>
+          Hủ tiếu Sài Gòn được coi là tinh hoa ẩm thực, thể hiện nét văn hóa cũng
+          như cuộc sống của người dân nơi đây. Du lịch Sài Gòn, đừng quên thưởng
+          thức món ăn hấp dẫn, đậm đà hương vị đặc trưng này!Sài Gòn hấp dẫn du
+          khách bởi những cảnh đẹp thiên nhiên, những món ăn độc lạ. Đã đến đây,
+          nhất định bạn phải thử hủ tiếu Sài Gòn. Đây là món ăn bình dị, dân dã
+          nhưng chứa đựng bản sắc văn hóa ẩm thực độc đáo khó cưỡng, khiến du
+          khách không thể chối từ.<br />Hủ tiếu Nam Vang là 1 trong những món hủ
+          tiếu Sài Gòn được du nhập từ Campuchia. Tuy nhiên, khi về đến Sài Gòn,
+          món ăn này được chế biến lại sao cho phù hợp với khẩu vị của người dân
+          địa phương. Nồi nước dùng được nấu công phu, trong veo, mang vị thanh
+          ngọt đặc trưng, thu hút nhiều du khách khi đến du lịch Sài Gòn.
+        </p>
+        <h2>3. Viên ngọc xanh Phú Quốc - Kiên Giang</h2>
+        <p>
+          Phú Quốc còn được mệnh danh là Đảo Ngọc, là hòn đảo lớn nhất của Việt
+          Nam, cũng là đảo lớn nhất trong quần thể 22 đảo tại đây, nằm trong vịnh
+          Thái Lan. Đảo Phú Quốc cùng với các đảo khác tạo thành huyện đảo Phú
+          Quốc trực thuộc tỉnh Kiên Giang. Toàn bộ huyện đảo có tổng diện tích
+          589,23 km². Thị trấn Dương Đông, tọa lạc ở phía tây bắc, là thủ phủ của
+          huyện đảo, cũng là địa danh tour du lịch Phú Quốc nổi tiếng. Phú Quốc
+          nằm cách thành phố Rạch Giá 120 km và cách thị xã Hà Tiên 45 km. Phần
+          các vùng biển quanh đảo nông có độ sâu chưa đến 10 m. Tuy nhiên, cụm đảo
+          nhỏ của cảng An Thới bị ngăn cách hẳn với phần mũi phía nam của đảo Phú
+          Quốc bởi một eo biển có độ sâu tới hơn 60 m.
+        </p>
+        <img
+          src="https://bcp.cdnchinhphu.vn/334894974524682240/2024/4/27/phuquoc-17142159895461759842212.jpg"
+          alt=""
+        />
+        <p>
+          Phú Quốc là hòn đảo lớn nhất với bờ biển dài tới 150km và duy nhất của
+          Việt Nam không phải gánh chịu ảnh hưởng từ bão, tạo nên lợi thế “vàng”
+          để Phú Quốc phát triển du lịch thuận lợi. Thiên nhiên đã ban tặng cho
+          Phú Quốc bờ biển dài tới 150km giúp nơi đây có thể khai thác tối đa dịch
+          vụ du lịch. Năm 2006, huyện đảo Phú Quốc được UNESCO công nhận là Khu dự
+          trữ sinh quyển thế giới đã khiến hòn đảo này dần trở thành cái tên quen
+          thuộc trên bản đồ du lịch quốc tế.
+        </p>
+        <img
+          src="https://cdn-i.vtcnews.vn/resize/th/upload/2023/05/08/vp1-09470825.jpg"
+          alt=""
+        />
+        <h4>Vinpear - Phú Quốc</h4>
+        <p>
+          Vinpearl Phú Quốc là một phần trong quần thể Phú Quốc United Center - Hệ
+          sinh thái khép kín của Vingroup với đầy đủ các tiện ích như Vinpearl
+          Golf, Casino, Almaz… đẳng cấp 5 sao. Mặc dù đã được cải tạo và phát
+          triển du lịch, thế nhưng Vinpearl Phú Quốc vẫn giữ được vẻ đẹp hoang sơ
+          nguyên thủy của Bãi Dài với các quần thể khách sạn, resort, sân golf,
+          vườn thú mở,... Vinpearl Phú Quốc sở hữu diện tích khá lớn, lên đến hơn
+          1000 hecta và được mệnh danh là hệ sinh thái “không ngủ” đầu tiên tại
+          Việt Nam. Nhờ hàng loạt tiện ích nghỉ dưỡng và giải trí đẳng cấp cùng
+          thời gian hoạt động 24/7, nơi đây đã góp phần đưa Phú Quốc trở thành
+          điểm đến quốc tế mới được nhiều người yêu thích tại Châu Á.<br />Ăn gì ở
+          Phú Quốc chắc hẳn là quan tâm của nhiều du khách khi lên kế hoạch đến
+          đây. Đảo ngọc không chỉ níu chân du khách bởi cảnh quan biển đảo đẹp nên
+          thơ mà còn bởi vô số món đặc sản Phú Quốc thơm ngon, hấp dẫn. Đến đây,
+          bạn sẽ có cơ hội được thưởng thức những con mực tươi roi rói khi theo
+          chân ngư dân ra khơi, ghẹ Hàm Ninh ngọt thịt, ốc gai nướng mỡ hành béo
+          thơm hay chọn mua hải sản khô, hạt tiêu, rượu mỏ quạ, trà sâm biển về
+          làm quà.
+        </p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRojR0vrBt1yrcue2N-RGRo9t3aELZ-vyX1ig&s"
+          alt=""
+        />
+        <h4>Bánh canh ghẹ Phú Quốc</h4>
+        <p>
+          Bánh canh ghẹ Phú Quốc từ lâu đã nổi danh là món đặc sản ngon trứ danh
+          tại Đảo Ngọc. Từ những nguyên liệu hải sản tươi sạch cùng với cách chế
+          biến tỉ mỉ, tinh tế, bánh canh ghẹ đã chiều lòng cả người dân địa phương
+          lẫn du khách tứ phương.<br />Món bánh canh ghẹ Phú Quốc là một trong
+          những món ăn đặc sản của người dân Phú Quốc và được nhiều khách du lịch
+          lựa chọn thưởng thức khi đi du lịch Phú Quốc. Linh hồn của món ăn nằm ở
+          phần nước dùng khi mang đậm vị ngọt thanh, tươi mới của hải sản và độ
+          mềm dai của bột bánh. Một trong những nguyên liệu chính quyết định sự
+          hấp dẫn và đặc trưng của món ăn chính là ghẹ. Đặc biệt, theo mình được
+          biết, làng chài Hàm Ninh nổi tiếng có ghẹ tươi ngon mà giá cả lại cực kỳ
+          phải chăng đó.
+        </p>
+        <img
+          src="https://static.vinwonders.com/2022/05/goi-ca-trich-phu-quoc-1.jpg"
+          alt=""
+        />
+        <h4>Gỏi cá trích Phú Quốc</h4>
+        <p>
+          Với những người sành ăn thì gỏi cá trích Phú Quốc là món ăn không thể bỏ
+          lỡ khi du lịch tại đây. Từng miếng cá sống ngọt thanh chấm cùng nước sốt
+          thơm ngon sẽ tạo nên một dư vị rất khó quên.Bên cạnh bánh canh ghẹ, bún
+          quậy… thì gỏi cá trích Phú Quốc cũng là một món ăn hấp dẫn mà bạn nên
+          liệt kê vào menu ẩm thực của mình khi có dịp đến đây. “Món ăn thương
+          hiệu” này được bán tại nhiều nhà hàng quanh các địa điểm du lịch Phú
+          Quốc nổi tiếng, vì vậy, bạn có thể thoải mái thưởng thức với mức giá rẻ.
+        </p>
+      </div>
+   
+    <footer>
+        <p>&copy; 2024 Giới thiệu Cảnh đẹp và Ẩm thực Việt Nam. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
